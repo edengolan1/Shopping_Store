@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men Sweaters And Jackets</title>
+    <link rel="stylesheet" href="Styles/WomenItem.css"/>
+    <link rel="stylesheet" href="Styles/Header.css"/>
+    <link rel="stylesheet" href="Styles/ViewItem.css"/>
+    <script src="scripts/WomenItem.js" type="text/javascript"></script>
+    <script src="scripts/Header.js" type="text/javascript"></script>
+    <script src="scripts/AddItem.js" type="text/javascript"></script>
+    <script src="scripts/SideBar.js" type="text/javascript"></script>
+    <script src="scripts/SortBy.js" type="text/javascript"></script>
+    <script src="scripts/Filter.js" type="text/javascript"></script>
+    <script src="scripts/DisplayItems.js" type="text/javascript"></script>
+    <script src="scripts/ViewItem.js" type="text/javascript"></script>
+</head>
+<body>
+        <div id="menu"></div>
+        <main>
+            <div id="shirtWomen">
+                <h1>סוודרים וגקטים לגברים</h1>
+            </div>
+            <div id="arrows">
+                <ul id="ulArrows">
+                    <li>
+                        <a href="ClothingStore.html">&lt דף הבית </a>
+                    </li>
+                    <li>
+                        <a href="#">&lt גברים</a>
+                    </li>
+                    <li>
+                        <a href="MenSweatersJackets.html">סוודרים וגקטים</a>
+                    </li>
+                    <li>
+                        <a href="#" id="changeTitle"></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="mainShirt">
+                <div id="contentItem">
+                    <aside id="sideBar">
+                        <script>
+                            var listTypeSweatersJackets = ['סוודרים','סריגים','ג`קטים','מעילים'];
+                            var listSizes = ['XS','S','M','L','XL','XXL'];
+                            var listColors = ['black','white','gray','brown','antiquewhite','blue'];
+                            var listBrands = ['AMERICAN EIGALE','COLUMBIA','ADIDAS'];
+                            CreateSideBar('סוודרים וג`קטים','MenSweatersJackets.html',listTypeSweatersJackets,listSizes,listColors,listBrands);
+                        </script>
+                    </aside>
+                    <div id="items">
+                        <div id="textItems">
+                            <div id="showBy">
+                                <form>
+                                    <select id="showBy" name="showBy" onchange="sortItems(this.value)">
+                                        <option value="showBy1">הצג לפי</option>
+                                        <option value="showBySale">מבצע</option>
+                                        <option value="justLanded">JUST LANDED</option>
+                                        <option value="lowPrice">מחיר: מהנמוך לגבוה</option>
+                                        <option value="highPrice">מחיר: מהגבוה לנמוך</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div id="numberItems"></div>
+                        </div>
+                        <ul id="imgItems">
+                            <script>
+                                var colors1 = ['brown'];
+                                var images1 = ['imageSweatersJaketsMen/coats/1/coat1.jpg', 'imageSweatersJaketsMen/coats/1/coat2.jpg','imageSweatersJaketsMen/coats/1/coat3.jpg'];
+                                AddItem("imageSweatersJaketsMen/coats/1/coat1.jpg", "COLUMBIA", "מעיל","299.90","15",colors1,['M','L','XL','XXL','XXXL'],images1);
+                                var colors2 = ['black'];
+                                var images2 = ['imageSweatersJaketsMen/jakets/1/jaket1.jpg', 'imageSweatersJaketsMen/jakets/1/jaket2.jpg'];
+                                AddItem("imageSweatersJaketsMen/jakets/1/jaket1.jpg", "COLUMBIA", "ג`קט","199.90","10",colors2,['XS','L','XL'],images2);
+                                var colors3 = ['blue'];
+                                var images3 = ['imageSweatersJaketsMen/jakets/2/jaket1.jpg', 'imageSweatersJaketsMen/jakets/2/jaket2.jpg'];
+                                AddItem("imageSweatersJaketsMen/jakets/2/jaket1.jpg", "ADIDAS", "ג`קט","259.90","25",colors3,['S','L','XL','XXXL'],images3);
+                                var colors4 = ['antiquewhite'];
+                                var images4 = ['imageSweatersJaketsMen/knitwear/1/knitwear1.jpg'];
+                                AddItem("imageSweatersJaketsMen/knitwear/1/knitwear1.jpg", "AMERICAN EAGLE", "סריג","199.90","15",colors4,['M','L','XL','XXL'],images4);
+                                var colors5 = ['antiquewhite'];
+                                var images5 = ['imageSweatersJaketsMen/knitwear/2/knitwear1.jpg', 'imageSweatersJaketsMen/knitwear/2/knitwear2.jpg'];
+                                AddItem("imageSweatersJaketsMen/knitwear/2/knitwear1.jpg", "AMERICAN EAGLE", "סריג","159.90","10",colors5,['S','L','XL'],images5);
+                                var colors6 = ['blue'];
+                                var images6 = ['imageSweatersJaketsMen/Sweaters/1/sweater1.jpg', 'imageSweatersJaketsMen/Sweaters/1/sweater2.jpg'];
+                                AddItem("imageSweatersJaketsMen/Sweaters/1/sweater1.jpg", "COLUMBIA", "סוודר","299.90","15",colors6,['S','L','XXL'],images6);
+                                var colors7 = ['gray'];
+                                var images7 = ['imageSweatersJaketsMen/Sweaters/2/sweater1.jpg', 'imageSweatersJaketsMen/Sweaters/2/sweater2.jpg'];
+                                AddItem("imageSweatersJaketsMen/Sweaters/2/sweater1.jpg", "AMERICAN EAGLE", "סוודר","139.90","30",colors7,['S','M','XL'],images7);
+                            </script>
+                        </ul>
+                        <script>
+                            NumberItems(listItems.length);
+                        </script>
+                        <script src="scripts/List.js" type="text/javascript"></script>
+                    </div>    
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

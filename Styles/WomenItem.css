@@ -1,0 +1,390 @@
+#shirtWomen{
+    height: 150px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#arrows{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#arrows >ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+}
+#arrows >ul >li{
+    padding: 3px;
+}
+#arrows >ul :hover{
+    text-decoration: underline;
+}
+#arrows >ul >li>a{
+    color: black;
+    text-decoration: none;
+}
+#mainShirt,#contentItem{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+#sideBar{
+    width: 25%;
+    position: sticky;
+    top: 0;
+}
+#items{
+    width: 75%;
+}
+#textItems{
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+}
+#textItems >div{
+    padding-right: 15px;
+}
+#showBy{
+    width: 150px;
+    height: 36px;
+}
+#showBy>form :active{
+    box-shadow: 4px 4px 4px 4px blue;
+}
+#sideBar{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: end;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#sideBar>div{
+    width: 75%;
+    height: 620px;
+    margin-left: 20px;
+}
+#displaySideBar{
+    width: 75%;
+    height: 620px;
+    margin-left: 20px;
+}
+#displayShirt{
+    font-size: 20px;
+    border-bottom: 1px solid rgb(181, 179, 179);
+}
+#optionShirt>ul{
+    list-style-type: none;
+}
+#optionShirt>ul>li{
+    padding-bottom: 12px;
+}
+#optionShirt>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+#optionShirt>ul>li :hover{
+    text-decoration: underline;
+}
+#filteringShirt{
+    height: 45px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(175, 173, 173);
+}
+#clearAll{
+    display: flex;
+} 
+#clearAll1{
+    border: none;
+    text-decoration: underline;
+    background-color: white;
+}
+#clearAll1>a{
+    color: black;
+}
+#clearAll :hover{
+    text-decoration: none;
+}
+#filteringBy{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+} 
+#filteringOption>div{
+    border-bottom: 0.1px solid rgb(222, 219, 219);
+}
+#filterSize #optionSize{
+    display: none;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    margin-left: 25px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+#filterSize #optionSize>a{
+    color: black;
+    text-decoration: none;
+}
+#filterColor #optionColor{
+    display: none;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    margin-left: 50px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+#filterColor #optionColor>a>div{
+    border: 3px solid black;
+}
+#filterColor #optionColor>a :hover{
+    border: 3px solid gray;
+}
+#optionColor>a>div{
+    border-radius: 50px;
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+}
+#filterSize>button{
+    display: block;
+    width: 282px;
+    height: 50px;
+    text-align: end;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+#filterColor>button{
+    display: block;
+    width: 282px;
+    height: 50px;
+    text-align: end;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+#filterSize #optionSize>span{
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+#filterBrand>button{
+    display: block;
+    width: 282px;
+    height: 50px;
+    text-align: end;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+#filterBrand #optionBrand{
+    display: none;
+    position: relative;
+    z-index: 1;
+    min-width: 120px;
+    background-color: white;
+    margin-left: 120px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+#filterBrand #optionBrand >a{
+    color: black;
+    text-decoration: none;
+}
+#filterBrand #optionBrand >a :hover{
+    text-shadow: 2px 2px 4px black;
+}
+#filterSize #optionSize >a :hover{
+    text-shadow: 2px 2px 4px black;
+}
+#optionSize a.underline {
+    text-decoration: underline;
+}
+#numberItems{
+    display: flex;
+    flex-direction: row;
+}
+#numberItems>span{
+    margin: 3px;
+}
+#imgItems>li>div{
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    width: 250px;
+}
+#imgItems>li{
+    list-style-type: none;
+}
+#imgItems{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 20px;
+    column-gap: 25px;
+    justify-content: end;
+}
+#pic{
+    height: 320px;
+    width: 250px;
+}
+#picBackground{
+    background-color: black;
+    width: 150px;
+    height: 65px;
+    position:absolute;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 255px;
+    margin-left: 26px;
+}
+#picBackground>button{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    color: blueviolet;
+    border: none;
+    cursor: pointer;
+}
+#picBackground>button :hover{
+    color: gray;
+}
+#button1 :active{
+    fill: black;
+}
+#picBackground>button>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65px;
+}
+#picBackground>button>div>svg{
+    margin-top: 10px;
+}
+#picBackground1{
+    display: none;
+    padding-left: 25px;
+    z-index: 1;
+}
+#imgItems>li>div :hover #picBackground1{
+    display:block;
+}
+#new{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    color:pink;
+    margin-top: 10px;
+    margin-left: -11px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clothingSize{
+    display: none;
+    width: 50px;
+    position:absolute;
+    margin-top: 60px;
+    margin-left: 200px;
+    font-size: 12px;
+    background-color: rgb(146, 146, 146);
+}
+#imgItems>li :hover #clothingSize{
+    display: block;
+}
+#clothingSize>div{
+    display: flex;
+    height: 26px;
+    justify-content: center;
+    border-bottom: 1px solid rgb(217, 216, 216);
+}
+#detailsItems{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+}
+#company>a{
+    text-decoration: none;
+    color: black;
+}
+#company>a :hover{
+    text-decoration: underline;
+}
+#company{
+    width: 125px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    cursor: pointer;
+}
+#price{
+    width: 125px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+#priceBeforeDiscount{
+    text-decoration: line-through;
+}
+#discount{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    width: 40px;
+    border-radius: 7px;
+}
+#discount>span{
+    margin-left: 5px;
+}
+#colorItems{
+    display: flex;
+    justify-content: end;
+}
+#colorItems>div{
+    height: 17px;
+    width: 17px;
+    border-radius: 50px;
+    margin: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#colorItems :hover{
+    border: 3px solid gray;
+}

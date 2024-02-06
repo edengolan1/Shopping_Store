@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babies Boys</title>
+    <link rel="stylesheet" href="Styles/WomenItem.css"/>
+    <link rel="stylesheet" href="Styles/Header.css"/>
+    <link rel="stylesheet" href="Styles/ViewItem.css"/>
+    <script src="scripts/WomenItem.js" type="text/javascript"></script>
+    <script src="scripts/Header.js" type="text/javascript"></script>
+    <script src="scripts/AddItem.js" type="text/javascript"></script>
+    <script src="scripts/SideBar.js" type="text/javascript"></script>
+    <script src="scripts/SortBy.js" type="text/javascript"></script>
+    <script src="scripts/Filter.js" type="text/javascript"></script>
+    <script src="scripts/DisplayItems.js" type="text/javascript"></script>
+    <script src="scripts/ViewItem.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="menu"></div>
+        <main>
+            <div id="shirtWomen">
+                <h1>בייבי בנים</h1>
+            </div>
+            <div id="arrows">
+                <ul id="ulArrows">
+                    <li>
+                        <a href="ClothingStore.html">&lt דף הבית </a>
+                    </li>
+                    <li>
+                        <a href="#">&lt בייבי</a>
+                    </li>
+                    <li>
+                         <a href="BabiesBoys.html">בייבי בנים</a>
+                    </li>
+                    <li>
+                        <a href="#" id="changeTitle"></a>
+                   </li>
+                </ul>
+            </div>
+            <div id="mainShirt">
+                <div id="contentItem">
+                    <aside id="sideBar">
+                        <script>
+                            var listTypeSweatersJackets = ['חולצות','מכנסיים','נעליים','סוודרים וגקטים','בגדי גוף','מעילים'];
+                            var listSizes = ['0-3M','3-6M','6-9M','9-12M','12-18','18-24','2Y','3Y','17','17.5','18','18.5','19','19.5','20','20.5','21'];
+                            var listColors = ['black','white','gray','blue'];
+                            var listBrands = ['SHILAV','FOX','ADIDAS'];
+                            CreateSideBar('בייבי בנים','BabiesBoys.html',listTypeSweatersJackets,listSizes,listColors,listBrands);
+                        </script>
+                    </aside>
+                    <div id="items">
+                        <div id="textItems">
+                            <div id="showBy">
+                                <form>
+                                    <select id="showBy" name="showBy" onchange="sortItems(this.value)">
+                                        <option value="showBy1">הצג לפי</option>
+                                        <option value="showBySale">מבצע</option>
+                                        <option value="justLanded">JUST LANDED</option>
+                                        <option value="lowPrice">מחיר: מהנמוך לגבוה</option>
+                                        <option value="highPrice">מחיר: מהגבוה לנמוך</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div id="numberItems"></div>
+                        </div>
+                        <ul id="imgItems">
+                            <script>
+                                var colors1 = ['blue'];
+                                var images1 = ['imageBabiesBoys/coats/1/coat1.jpg', 'imageBabiesBoys/coats/1/coat2.jpg'];
+                                AddItem("imageBabiesBoys/coats/1/coat1.jpg", "SHILAV", "מעיל","199.90","15",colors1,['0-3M','3-6M','6-9M','9-12M'],images1);
+                                var colors2 = ['blue'];
+                                var images2 = ['imageBabiesBoys/leotards/1/leotards1.jpg', 'imageBabiesBoys/leotards/1/leotards2.jpg'];
+                                AddItem("imageBabiesBoys/leotards/1/leotards1.jpg", "SHILAV", "בגד גוף","99.90","25",colors2,['0-3M','3-6M','6-9M'],images2);
+                                var colors3 = ['white'];
+                                var images3 = ['imageBabiesBoys/pants/1/pant1.jpg', 'imageBabiesBoys/pants/1/pant2.jpg'];
+                                AddItem("imageBabiesBoys/pants/1/pant1.jpg", "SHILAV", "מכנסיים","99.90","15",colors3,['0-3M','3-6M'],images3);
+                                var colors4 = ['gray'];
+                                var images4 = ['imageBabiesBoys/pants/2/pant1.jpg', 'imageBabiesBoys/pants/2/pant2.jpg'];
+                                AddItem("imageBabiesBoys/pants/2/pant1.jpg", "SHILAV", "מכנסיים","99.90","20",colors4,['6-9M','9-12M','2Y','3Y'],images4);
+                                var colors5 = ['gray'];
+                                var images5 = ['imageBabiesBoys/shirts/1/shirt1.jpg', 'imageBabiesBoys/shirts/1/shirt2.jpg'];
+                                AddItem("imageBabiesBoys/shirts/1/shirt1.jpg", "FOX", "חולצה","39.90","5",colors5,['9-12M','2Y','3Y'],images5);
+                                var colors6 = ['black'];
+                                var images6 = ['imageBabiesBoys/shoes/1/shoes1.jpg', 'imageBabiesBoys/shoes/1/shoes2.jpg'];
+                                AddItem("imageBabiesBoys/shoes/1/shoes1.jpg", "ADIDAS", "נעליים","199.90","15",colors6,['17','19','19.5','21'],images6);
+                                var colors7 = ['black'];
+                                var images7 = ['imageBabiesBoys/SweatersJakets/1/jaket1.jpg', 'imageBabiesGirls/coats/1/coat2.jpg'];
+                                AddItem("imageBabiesBoys/SweatersJakets/1/jaket1.jpg", "SHILAV", "ג`קט","199.90","25",colors7,['6-9M','9-12M'],images7);
+                                var colors8 = ['white'];
+                                var images8 = ['imageBabiesBoys/SweatersJakets/2/sweater1.jpg', 'imageBabiesBoys/SweatersJakets/2/sweater2.jpg'];
+                                AddItem("imageBabiesBoys/SweatersJakets/2/sweater1.jpg", "SHILAV", "סוודר","99.90","10",colors8,['0-3M','3-6M','6-9M'],images8);
+                            </script>
+                        </ul>
+                        <script>
+                            NumberItems(listItems.length);
+                        </script>
+                        <script src="scripts/ViewItem.js" type="text/javascript"></script>
+                        <script src="scripts/List.js" type="text/javascript"></script>
+                    </div>    
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

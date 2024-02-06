@@ -1,0 +1,82 @@
+#mylist{
+    height: 220px;
+    width: 100%;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+}
+#mylist>div{
+    margin: 7px;
+}
+#listAddCard{
+    width: 250px;
+    height: 400px;
+}
+#shoppingBagList{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 20px;
+    column-gap: 50px;
+    justify-content: end;
+}
+#shoppingBagList>li{
+    list-style-type: none;
+}
+#removeFromLike{
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+#detailsItems{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+}
+#company>a{
+    text-decoration: none;
+    color: black;
+}
+#company>a :hover{
+    text-decoration: underline;
+}
+#company{
+    width: 125px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    cursor: pointer;
+}
+#price{
+    width: 125px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+#priceBeforeDiscount{
+    text-decoration: line-through;
+}
+#discount{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    width: 40px;
+    border-radius: 7px;
+}
+#discount>span{
+    margin-left: 5px;
+}

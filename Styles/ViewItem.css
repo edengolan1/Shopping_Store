@@ -1,0 +1,178 @@
+#mainShirt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#sideRight{
+    width: 680px;
+    height: 800px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+}
+#sideLeft{
+    width: 680px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#chooseDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-bottom: 1px solid rgb(205, 204, 204);
+    border-top: 1px solid rgb(205, 204, 204);
+    padding-top: 25px;
+}
+#bigImages{
+    width: 500px;
+    height: 700px;
+    background-repeat: round;
+}
+#image5{
+    background-repeat: round;
+}
+#smallImages{
+    width: 150px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#smallImages>div{
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+#nameCompany{
+    font-size: 20px;
+    cursor: pointer;
+}
+#nameCompany:hover,#nameItemm:hover{
+    text-decoration: underline;
+}
+#nameItemm{
+    font-size: 25px;
+    cursor: pointer;
+}
+#detailsPrice{
+    margin-top: 15px;
+}
+#priceTotal{
+    font-weight: bold;
+    font-size: 20px;
+}
+#BeforeDiscount{
+    font-size: 17px;
+    text-decoration: line-through;
+}
+#priceDiscount{
+    background-color: black;
+    color: white;
+    width: 65px;
+    font-size: 15px;
+}
+#detailsColor1{
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 24px;
+}
+#color3{
+    font-weight: bold;
+    font-size: 24px;
+}
+#colorCircles>div{
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+#colorCircles{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+#colorCircles :hover{
+    border: 3px solid rgb(48, 48, 48);
+}
+#sizeDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+#allSize{
+    margin-top: 18px;
+}
+#size1{
+    font-size: 24px;
+    font-weight: bold;
+}
+#sizeDetails>div{
+    margin-left: 7px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#sizeDetails>div:hover{
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px black;
+}
+#addToBuy>div>button{
+    width: 400px;
+    height: 50px;
+    background-color: pink;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+#addToBuy>div{
+    margin: 60px
+}
+#addToBuy>div>button:hover{
+    background-color: rgb(218, 28, 91);
+    box-shadow: 2px 2px 3px rgb(238, 149, 164);
+    color: white;
+}
+#detailsOfItem>button{
+    width: 500px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    text-align: end;
+}
+#detailsOfItem{
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+#ShipmentsReturns{
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+#ShipmentsReturns>button{
+    width: 500px;
+    height: 50px;
+    text-align: end;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
+#details1{
+    position: relative;
+    z-index: 1;
+    display: none;
+    font-size: 17px;
+}
+#detailsShipmentsReturns{
+    position: relative;
+    z-index: 1;
+    display: none;
+    font-size: 17px;
+}
+#plusDetails,#plusDetails2{
+    float: left;
+}

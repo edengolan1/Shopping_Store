@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Shirt</title>
+    <link rel="stylesheet" href="Styles/List.css"/>
+    <script src="scripts/WomenItem.js" type="text/javascript"></script>
+    <script src="scripts/Header.js" type="text/javascript"></script>
+    <script src="scripts/List.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="menu">
+        <header>
+            <div id="registeration">
+                <div id="email">
+                    <span onclick="DisplayEmail();X()">חדשים באתר? הירשמו לניוזלטר וקבלו 10% הנחה &#128151</span>
+                    <div id="displayClickEmail">
+                        <div>
+                            <p id="be">BE THE FIRST<br> TO KNOW<br> EVERYTHING</p>
+                            <p id="copun">קוד קופון 10% הנחה נשלח במייל לנרשמים חדשים לניוזלטר*</p>
+                        </div>
+                        <div>
+                            <p id="errorEmail">Enter your email!</p>
+                            <form>
+                                <div id="enterEmail">
+                                    <div id="enterEmail2">
+                                        <input type="email" id="enterEmail3" name="email" placeholder="הכניסו מייל*" required/>
+                                    </div>
+                                    <div id="buttonEnter">
+                                        <button type="submit" onclick="Validation()">הרשמה</button>
+                                    </div>
+                                </div>
+                                <div id="checkbox">
+                                    <label for="checkbox">אני מאשר/ת ומסכימ/ה לקבלת דיוור ישיר<br> הודעות ופרסומים שיווקיים באמצעות הדוא"ל</label>
+                                    <input type="checkbox" id="checkbox" name="checkbox" required checked/>
+                                </div>       
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+                <div id="plus">
+                    <span>+</span>
+                </div>
+            </div>
+            <div id="connection">
+                <div id="buttons">
+                    <div id="heart" onclick="GoToPageList()">
+                        <i class="bi bi-heart-fill"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg>
+                    </div>
+                    <div id="Suitcase">
+                        <i class="bi bi-cart-fill"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                          </svg>
+                    </div>
+                    <div id="message">
+                        <p id="changeText" onload="ChangeText()">משלוח חינם עד הבית בכל הזמנה</p>
+                    </div>
+                </div> 
+                <a id="buttonConnection1">
+                    <div id="buttonConnection">
+                        <button onclick="DisplayLogin()">התחברות</button>
+                        <div id="formLogin" class="formLogin1">
+                            <form>
+                                <h3>?רשומים לאתר</h3>
+                                <button type="button" id="buttonFacebook">התחברות עם פייסבוק</button>
+                                <button type="button" id="buttonApple">התחברות באמצעות Apple</button>
+                                <h4>או</h4>
+                                <div>
+                                    <input type="email" id="email" name="Email" title="Email" placeholder="Email*" required>
+                                </div>
+                                <div>
+                                    <input type="password" id="password" placeholder="Password*" name="password" title="Password" required>  
+                                </div>
+                                <button type="submit" id="submit">כניסה</button>
+                            </form>
+                        </div>            
+                    </div>    
+                </a>
+            </div>
+            <div id="nav">
+                <a href="#">
+                    <div id="women">
+                        <button id="button">
+                            <i>Women</i>
+                        </button>
+                        <div id="option">
+                            <a href="WomenShirts.html">חולצות</a>
+                            <a href="womenPants.html">מכנסיים</a>
+                            <a href="WomenDress.html">שמלות</a>
+                            <a href="WomenShoes.html">נעליים</a>
+                            <a href="WomenSweatersJackets.html">סוודרים וגקטים</a>
+                        </div>
+                    </div>    
+                </a>
+                <a href="#">
+                    <div id="men">
+                        <button id="button">
+                            <i>Men</i>
+                        </button>
+                        <div id="option">
+                            <a href="MenShirt.html">חולצות</a>
+                            <a href="MenPants.html">מכנסיים</a>
+                            <a href="MenShoes.html">נעליים</a>
+                            <a href="MenSweatersJackets.html">סוודרים וגקטים</a>
+                        </div>
+                    </div>    
+                </a>
+                <a href="#">
+                    <div id="kids">
+                        <button id="button">
+                            <i>Kids</i>
+                        </button>
+                        <div id="option">
+                            <a href="Girls.html">בנות</a>
+                            <a href="Boys.html">בנים</a>
+                        </div>
+                    </div>    
+                </a>
+                <a href="#">
+                    <div id="baby">
+                        <button id="button">
+                            <i>Baby</i>
+                        </button>
+                        <div id="option">
+                            <a href="BabiesGirls.html">בייבי בנות</a>
+                            <a href="BabiesBoys.html">בייבי בנים</a>
+                        </div>
+                    </div>    
+                </a>
+            </div>
+            <script src="scripts/List.js" type="text/javascript"></script>
+        </header>
+    </div>
+</body>

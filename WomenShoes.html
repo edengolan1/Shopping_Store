@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Shoes</title>
+    <link rel="stylesheet" href="Styles/WomenItem.css"/>
+    <link rel="stylesheet" href="Styles/Header.css"/>
+    <link rel="stylesheet" href="Styles/ViewItem.css"/>
+    <script src="scripts/WomenItem.js" type="text/javascript"></script>
+    <script src="scripts/Header.js" type="text/javascript"></script>
+    <script src="scripts/AddItem.js" type="text/javascript"></script>
+    <script src="scripts/SideBar.js" type="text/javascript"></script>
+    <script src="scripts/SortBy.js" type="text/javascript"></script>
+    <script src="scripts/Filter.js" type="text/javascript"></script>
+    <script src="scripts/DisplayItems.js" type="text/javascript"></script>
+    <script src="scripts/ViewItem.js" type="text/javascript"></script>
+</head>
+<body>
+        <div id="menu"></div>
+        <main>
+            <div id="shirtWomen">
+                <h1>נעליים לנשים</h1>
+            </div>
+            <div id="arrows">
+                <ul id="ulArrows">
+                    <li>
+                        <a href="ClothingStore.html">&lt דף הבית </a>
+                    </li>
+                    <li>
+                        <a href="#">&lt נשים</a>
+                    </li>
+                    <li>
+                         <a href="WomenShoes.html">נעליים</a>
+                    </li>
+                    <li>
+                        <a href="#" id="changeTitle"></a>
+                   </li>
+                </ul>
+            </div>
+            <div id="mainShirt">
+                <div id="contentItem">
+                    <aside id="sideBar">
+                        <script>
+                            var listTypeShoes = ['מגפיים','נעלי בית','סנדלים','נעלי ספורט','סניקרס','עקבים'];
+                            var listSizes = ['35','36','37','38','39','40','41','42','43','44'];
+                            var listColors = ['black','white','gray','pink','brown'];
+                            var listBrands = ['NIKE','TOMMY HILFINGER','MANGO','LALINE','YANGA'];
+                            CreateSideBar('נעליים',"WomenShoes.html",listTypeShoes,listSizes,listColors,listBrands);
+                        </script>
+                    </aside>
+                    <div id="items">
+                        <div id="textItems">
+                            <div id="showBy">
+                                <form>
+                                    <select id="showBy" name="showBy" onchange="sortItems(this.value)">
+                                        <option value="showBy1">הצג לפי</option>
+                                        <option value="showBySale">מבצע</option>
+                                        <option value="justLanded">JUST LANDED</option>
+                                        <option value="lowPrice">מחיר: מהנמוך לגבוה</option>
+                                        <option value="highPrice">מחיר: מהגבוה לנמוך</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div id="numberItems"></div>
+                        </div>
+                        <ul id="imgItems">
+                            <script>
+                                var colors1 = ['gray'];
+                                var images1 = ['imageShoesWomen/boots/1/boot1.jpg','imageShoesWomen/boots/1/boot2.jpg']
+                                AddItem("imageShoesWomen/boots/1/boot1.jpg", "YANGA", "מגפיים","159.90","20",colors1,['35','37','38','40','41'],images1);
+                                var colors2 = ['brown'];
+                                var images2 = ['imageShoesWomen/heels/1/heel1.jpg','imageShoesWomen/heels/1/heel2.jpg','imageShoesWomen/heels/1/heel3.jpg'];
+                                AddItem("imageShoesWomen/heels/1/heel1.jpg", "MANGO", "נעלי עקב","199.90","20",colors2,['34','37','40','41'],images2);
+                                var colors3 = ['black'];
+                                var images3 = ['imageShoesWomen/heels/2/heel1.jpg','imageShoesWomen/heels/2/heel2.jpg','imageShoesWomen/heels/2/heel3.jpg'];
+                                AddItem("imageShoesWomen/heels/2/heel1.jpg", "MANGO", "נעלי עקב","149.90","10",colors3,['34','36','37','38'],images3);
+                                var colors4 = ['pink'];
+                                var images4 = ['imageShoesWomen/slippers/1/slippers2.jpg','imageShoesWomen/slippers/1/slippers3.jpg','imageShoesWomen/slippers/1/slippers4.jpg'];
+                                AddItem("imageShoesWomen/slippers/1/slippers1.jpg", "NIKE", "נעלי בית","139.90","10",colors4,['34','36','37','38'],images4);
+                                var colors5 = ['pink'];
+                                var images5 = ['imageShoesWomen/sneakers/1/sneakers1.jpg', 'imageShoesWomen/sneakers/1/sneakers2.jpg','imageShoesWomen/sneakers/1/sneakers3.jpg'];
+                                AddItem("imageShoesWomen/sneakers/1/sneakers1.jpg", "NIKE", "סניקרס","439.90","10",colors5,['35','36','37','40'],images5);
+                                var colors6 = ['black'];
+                                var images6 = ['imageShoesWomen/sports/1/sports1.jpg', 'imageShoesWomen/sports/1/sports2.jpg','imageShoesWomen/sports/1/sports3.jpg'];
+                                AddItem("imageShoesWomen/sports/1/sports1.jpg", "NIKE", "נעלי ספורט","599.90","15",colors6,['35','37','40'],images6);
+                                var colors7 = ['white'];
+                                var images7 = ['imageShoesWomen/sandals/1/sandals1.jpg', 'imageShoesWomen/sandals/1/sandals2.jpg','imageShoesWomen/sandals/1/sandals3.jpg'];
+                                AddItem("imageShoesWomen/sandals/1/sandals1.jpg", "TOMMY HILFIGER", "סנדלים","399.90","25",colors7,['35','37','40','41'],images7);
+                                var colors8 = ['brown'];
+                                var images8 = ['imageShoesWomen/slippers/2/slippers1.jpg', 'imageShoesWomen/slippers/2/slippers2.jpg','imageShoesWomen/slippers/2/slippers3.jpg'];
+                                AddItem("imageShoesWomen/slippers/2/slippers1.jpg", "LALINE", "נעלי בית","99.90","25",colors8,['35','37'],images8);
+                            </script>
+                        </ul>
+                        <script>
+                            NumberItems(listItems.length);
+                        </script>
+                        <script src="scripts/List.js" type="text/javascript"></script>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
