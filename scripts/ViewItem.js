@@ -22,10 +22,10 @@ function ViewDetailsShipmentsReturns(){
         plus.innerText='+';
     }
 }
-var rifresh = document.getElementById('formDetailsBuy');
-rifresh.onsubmit = (e) => {
-    e.preventDefault();
-}
+// var rifresh = document.getElementById('formDetailsBuy');
+// rifresh.onsubmit = (e) => {
+//     e.preventDefault();
+// }
 function ChangeSubTitle(newTitle){
     var title = document.getElementById('changeTitle');
     title.innerHTML =  newTitle + ' &lt';
@@ -87,7 +87,7 @@ function addToCart() {
 function ContentView(nameCompany,nameItemm,price,discount,priceAfterDiscount,bigImage,smallImages,colors,sizes){
     var content = document.getElementById('contentItem');
     var main = document.getElementById('mainShirt');
-    content.innerHTML = '';
+    content.innerHTML = "";
     content.innerHTML =`
 <div id="sideRight">
     <div id="chooseDetails">
