@@ -388,3 +388,13 @@
 #colorItems :hover{
     border: 3px solid gray;
 }
+@media only screen and (max-width: 768px) {
+    #imgItems{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        row-gap: 20px;
+        column-gap: 25px;
+        justify-content: space-between;
+    }
+}
