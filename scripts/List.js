@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     displayShoppingBag();
 });
 function displayShoppingBag() {
-    const shoppingBagList = document.getElementById('shoppingBagList');
-    shoppingBagList.innerHTML = '';
+    var shoppingBagList = document.getElementById('shoppingBagList');
     const shoppingBag = JSON.parse(localStorage.getItem('shoppingBag')) || [];
     shoppingBag.forEach((item,index) => {
         const listItem = document.createElement('li');
@@ -54,5 +53,4 @@ function removeItem(index) {
     localStorage.setItem('shoppingBag', JSON.stringify(shoppingBag));
     document.getElementById('shoppingBagList').innerHTML = '';
     displayShoppingBag();
-    NumberItemsInLiked();
 }

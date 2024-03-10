@@ -1,12 +1,12 @@
-function TextDecorationType(type) {
-    if(type.style.textDecoration != 'underline'){
-        ResetDecorationType();
-        type.style.textDecoration = 'underline';
-    }
-    else{
-        type.style.textDecoration = 'none';
-    }
-}
+// function TextDecorationType(type) {
+//     if(type.style.textDecoration != 'underline'){
+//         ResetDecorationType();
+//         type.style.textDecoration = 'underline';
+//     }
+//     else{
+//         type.style.textDecoration = 'none';
+//     }
+// }
 function ResetDecorationType() {
     const typeDivs = document.querySelectorAll('#optionShirt ul li');
     typeDivs.forEach(div => {
@@ -58,7 +58,7 @@ function CreateSideBar(nameProduct, linkClearAll, listTypes, sizesTypes, colorsT
         </div>
         <div id="optionShirt">
             <ul>
-                ${listTypes.map(type =>`<li onclick="TextDecorationType(this)"><a href="#" id="underLink" onclick="filterItems('${typeMapping[type]}')">${type}</a></li>`).join('')}
+                ${listTypes.map(type =>`<li><a href="#" id="underLink" onclick="filterItems('${typeMapping[type]}')">${type}</a></li>`).join('')}
             </ul>
         </div>
     </div>
@@ -75,7 +75,7 @@ function CreateSideBar(nameProduct, linkClearAll, listTypes, sizesTypes, colorsT
             <div id="filterSize">
                 <button id="size" onclick="DisplaySize()">מידה</button>
                 <div id="optionSize">
-                    ${sizesTypes.map(size=> `<a href="#" onclick="FilterSizes('${size}');TextDecorationType('${size}');"><p id="underLink">${size}</p></a>`).join('')}
+                    ${sizesTypes.map(size=> `<a href="#" onclick="FilterSizes('${size}')"><p id="underLink">${size}</p></a>`).join('')}
                 </div>
             </div>
         <div id="filterColor">
