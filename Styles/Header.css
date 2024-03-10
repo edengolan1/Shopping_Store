@@ -167,7 +167,7 @@
         margin: 0;
     }
     #buttonConnection{
-        margin-left: 100px;
+        margin-left: 80px;
     }
 }
 @keyframes message{
@@ -281,17 +281,11 @@
     display: block;
 }
 @media only screen and (max-width: 768px) {
-    #nav{
-        width: 98%;
+    #nav,#registeration,body{
+        width: 100%;
     }
     #nav>div{
         padding-right: 10px;
         padding-left: 10px;
-    }
-    #registeration{
-        width: 98%;
-    }
-    body{
-        width: 98%;
     }
 }

@@ -4,14 +4,14 @@
     justify-content: space-evenly;
 }
 #sideRight{
-    width: 680px;
+    width: 50%;
     height: 800px;
     text-align: end;
     display: flex;
     flex-direction: column;
 }
 #sideLeft{
-    width: 680px;
+    width: 50%;
     height: 800px;
     display: flex;
     flex-direction: row;
@@ -26,7 +26,7 @@
     padding-top: 25px;
 }
 #bigImages{
-    width: 500px;
+    width: 85%;
     height: 700px;
     background-repeat: round;
 }
@@ -34,14 +34,14 @@
     background-repeat: round;
 }
 #smallImages{
-    width: 150px;
+    width: 20%;
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 #smallImages>div{
-    width: 120px;
+    width: 90%;
     height: 120px;
     cursor: pointer;
 }
@@ -123,7 +123,7 @@
     text-shadow: 2px 2px 5px black;
 }
 #addToBuy>div>button{
-    width: 400px;
+    width: 100%;
     height: 50px;
     background-color: pink;
     font-size: 22px;
@@ -140,7 +140,7 @@
     color: white;
 }
 #detailsOfItem>button{
-    width: 500px;
+    width: 100%;
     height: 50px;
     border: none;
     background-color: white;
@@ -154,7 +154,7 @@
     border-bottom: 1px solid rgb(200, 200, 200);
 }
 #ShipmentsReturns>button{
-    width: 500px;
+    width: 100%;
     height: 50px;
     text-align: end;
     border: none;

@@ -64,26 +64,6 @@ function resetTextDecoration() {
         div.style.textDecoration = 'none';
     });
 }
-// let selectedColor = null;
-// let selectedSize = null;
-// function DetailsColor(element) {
-//     document.querySelectorAll('.colorDiv').forEach((el) => el.classList.remove('selected'));
-//     element.classList.add('selected');
-//     selectedColor = element.style.backgroundColor;
-// }
-// function DetailsSize(element) {
-//     document.querySelectorAll('.sizeDiv').forEach((el) => el.classList.remove('selected'));
-//     element.classList.add('selected');
-//     selectedSize = element.textContent;
-// }
-// function addToCart() {
-//     if (selectedColor && selectedSize) {
-//       console.log("Selected Color:", selectedColor);
-//       console.log("Selected Size:", selectedSize);
-//     } else {
-//       alert("Please select both color and size before adding to cart.");
-//     }
-// }
 function ContentView(nameCompany,nameItemm,price,discount,priceAfterDiscount,bigImage,smallImages,colors,sizes){
     var content = document.getElementById('contentItem');
     var main = document.getElementById('mainShirt');
