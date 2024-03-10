@@ -166,6 +166,9 @@
         justify-content: center;
         margin: 0;
     }
+    #buttonConnection{
+        margin-left: 100px;
+    }
 }
 @keyframes message{
     from{ background-color: yellow;}

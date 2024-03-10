@@ -204,11 +204,16 @@
     display: none;
     position: relative;
     z-index: 1;
-    min-width: 120px;
     background-color: white;
-    margin-left: 120px;
+    margin-left: 25px;
     cursor: pointer;
     margin-right: 7px;
+}
+#filterBrand #optionBrand>span{
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    color: black;
 }
 #filterBrand #optionBrand >a{
     color: black;
@@ -396,5 +401,18 @@
         row-gap: 20px;
         column-gap: 25px;
         justify-content: space-between;
+    }
+    #optionSize,#optionBrand, #optionColor{
+        text-align: start;
+    }
+    #filterSize>button,#filterBrand>button,#filterColor>button{
+        text-align: start;
+    }
+    #filterColor #optionColor{
+        margin-left: 0;
+    }   
+    #showBy>option{
+        width: 150px;
+        height: 30px;
     }
 }

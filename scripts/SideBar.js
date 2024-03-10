@@ -82,7 +82,7 @@ function CreateSideBar(nameProduct, linkClearAll, listTypes, sizesTypes, colorsT
                <button onclick="DisplayColor()">צבע</button> 
                <div id="optionColor">
                     ${colorsTypes.map(color=>`<a href="#" onclick="FilterColors('${color}')"><div style="background-color:${color};"></div></a>`).join('')}
-           </div>
+                </div>
         </div>
         <div id="filterBrand">
             <button onclick="DisplayBrand()">מותג</button>
